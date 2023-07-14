@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function validateForm(){
+            let x = document.forms['myForm']['fname'].value;
+            if(x == ''){
+                alert('Nama harus diisi.');
+                return false;
+            }
+        }
+    </script>
+</head>
+<body>
+    <!-- Hari ini belajar HTML -->
+    <p>Hari ini belajar HTML bagian 1</p>
+    <a class="" href="https://www.apple.com/id/">Promo & Event</a>
+
+    <b>Kupon Diskon</b>
+    <p>Kupon Diskon 2</p>
+    <h1>Kursus Online</h1>
+
+    <!-- <img src="https://arkademi.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fimage-new-hero-comp.f8b58ff9.webp&w=750&q=75" alt="foto-mentor" />
+
+    <img src="../../batch10/icon-pendidikan.png" alt="logo-pendidikan" href="https://www.apple.com/id/" /> -->
+
+    <mark>Arkademi adalah lembaga kursus dan pendidikan resmi berlisensi dari Kementrian Pendidikan, Kebudayaan, Riset, dan Teknologi RI</mark>
+
+    <form name="myForm" onsubmit="return validateForm()">
+        Nama: <input type="text" name=" fname " />
+        <input type="submit" value="Submit" />
+    </form>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Nama</th>
+                <th>Alamat</th>
+                <th>Umur</th>
+                <th>No.HP</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Siti</td>
+                <td>Bekasi</td>
+                <td>23</td>
+                <td>0831111126</td>
+            </tr>
+            <tr>
+                <td>Nia</td>
+                <td>Lampung</td>
+                <td>21</td>
+                <td>0800037626</td>
+            </tr>
+            <tr>
+                <td>Budi</td>
+                <td>Bandung</td>
+                <td>23</td>
+                <td>08976753273</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>

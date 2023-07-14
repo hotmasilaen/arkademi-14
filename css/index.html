@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Belajar CSS</title>
+    <style>
+        #card{
+            height: 300px;
+            background-image: url('https://arkademi.com/_next/static/media/bg-container.ebe0c1e0.webp');
+        }
+        .container{
+            height: 300px;
+            background-color: #0972be;
+        }
+        /* p{
+            color: white;
+            font-weight: bold;
+            font-size: x-large;
+            background-color: brown;
+        } */
+        .card-2{
+            background-image: url('https://www.apple.com/v/ipad/home/cf/images/overview/ipad_for_education__rvh8drp6mfma_large.jpg');
+            width: 400px;
+            height: 400px;
+            color: white;
+            font-weight: bold;
+            font-size: x-large;
+            text-align: center;
+            padding-top: 3rem;
+            margin-top: 2rem;
+            filter: blur(2px);
+            /* background-position: center; */
+        }
+        .box{
+            width: 200px;
+            padding: 2rem;
+            border: 1px solid gray;
+            border-radius: 5px;
+            /* border-width: 1px;
+            border-style: solid;
+            border-color: gray; */
+            /* padding-top: 2rem;
+            padding-bottom: 2rem;
+            padding-left: 2rem;
+            padding-right: 2rem; */
+        }
+
+        .box-2{
+            background-color: #0972be;
+            transition: width 2s, height 2s, background-color 2s;
+            transition-delay: 2s;
+            animation: animasiKotak 2s ease 3 alternate forwards paused;
+        }
+
+        /* .box-2:hover{
+            width: 350px;
+            height: 350px;
+            background-color: blueviolet;
+        } */
+
+        @keyframes animasiKotak {
+            from{
+                width: 100px;
+                height: 100px;
+            }
+            to {
+                width: 350px;
+                height: 350px;
+                background-color: blueviolet;
+            }
+        }
+
+        .box-3{
+            background-color: #0972be;
+            transition: width 2s, height 2s, background-color 2s;
+            transition-delay: 2s;
+            animation: animasiKotak 2s ease 3 alternate forwards paused;
+            animation-delay: 2s;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="box-2"></div>
+    <div class="box-3"></div>
+    <div class="box">
+        <img src="https://arkademi.com/_next/image?url=https%3A%2F%2Fd19izmiuoyzsz.cloudfront.net%2Fimages%2FP22lk6BIZ7KMQkNaNdN4Njd4JWwwzROwzoaeNQDV.png&w=48&q=75" />
+        <h3>Sertifikasi</h3>
+        <p>Persiapan sertifikasi ahli mulai dari K3, ISO, Brevet Pajak, hingga HR untuk profesional.</p>
+    </div>
+    <div class="card-2">
+        Apple dan Pendidikan
+    </div>
+    <p>Arkademi adalah lembaga kursus dan pendidikan resmi berlisensi dari Kementrian Pendidikan, Kebudayaan, Riset, dan Teknologi RI</p>
+    <div class="container"></div>
+    <div id="card"></div>
+    <p>Lebih dari 500 kursus online dengan sertifikasi resmi untuk para pekerja dan profesional Indonesia dalam meningkatkan karier dan keahlian. Disusun dan diajarkan oleh instruktur ahli berpengalaman dengan pengakuan industri dan lisensi profesi.</p>
+    <button class="container">Masuk</button>
+    <button id="card"></button>
+
+</body>
+</html>
